@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function RestaurantCard({ restaurant }) {
-  console.log(restaurant, "rest");
+  // console.log(restaurant , "rest");
   return (
-    <link to={`/restaurant/${restaurant.info.id}`}>
+    <Link to={`/restaurant/${restaurant.info.id}`}>
       <div className="m-2 w-58">
         <img
           className="w-58 h-42 rounded-2xl"
@@ -19,7 +20,7 @@ function RestaurantCard({ restaurant }) {
           <p>{restaurant.info.locality}</p>
         </div>
       </div>
-    </link>
+    </Link>
   );
 }
 
